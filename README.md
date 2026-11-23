@@ -12,6 +12,10 @@ Programa completo de aprendizaje de Databricks, de cero a certificación y más 
 
 👉 **[docs/ruta-de-aprendizaje.md](docs/ruta-de-aprendizaje.md)** — la ruta completa con prerrequisitos: qué necesitas antes de empezar (Fase 0), en qué orden hacer cada track y qué lecturas son obligatorias en cada punto. Diseñada para que no te saltes nada.
 
+🛠️ **[docs/entorno-local.md](docs/entorno-local.md)** — qué instalar (y qué NO) para los módulos que se desarrollan desde tu Mac: dbx-13, dbx-14 y CI/CD.
+
+📓 **[bitacora/PLANTILLA.md](bitacora/PLANTILLA.md)** — copia esta plantilla por cada módulo terminado: qué aprendiste, qué te costó y cómo contarlo en una entrevista.
+
 ## Estructura
 
 Cada módulo es una carpeta con:
