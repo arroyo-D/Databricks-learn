@@ -10,7 +10,7 @@ Aprender a evaluar la calidad de un dataset de forma sistemática: integridad y 
 - **Fit (adecuación)**: ¿sirve para MI pregunta? (validez, fiabilidad, representatividad)
 
 ## Dataset
-Genera o usa un CSV de ejemplo con errores típicos (nulos, duplicados, valores imposibles, formatos mezclados). Puedes usar `data/ventas_sucias.csv` de la corrección como referencia para crear el tuyo. Para datos reales: [fuentes públicas verificadas](../../docs/fuentes-de-datos.md).
+Genera o usa un CSV de ejemplo con errores típicos (nulos, duplicados, valores imposibles, formatos mezclados). Puedes usar `data/ventas_sucias.csv` de la corrección como referencia para crear el tuyo. Para datos reales: [fuentes públicas verificadas](../docs/fuentes-de-datos.md).
 
 ## Tareas
 

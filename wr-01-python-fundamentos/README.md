@@ -6,7 +6,7 @@
 Dominar lo esencial de Python (variables, funciones, bucles, condicionales, errores) dentro de un notebook de Databricks, con un mini-caso de datos reales.
 
 ## Datos
-- Citi Bike (datos reales de viajes): https://citibikenyc.com/system-data ✅ verificada en [docs/fuentes-de-datos.md](../../docs/fuentes-de-datos.md)
+- Citi Bike (datos reales de viajes): https://citibikenyc.com/system-data ✅ verificada en [docs/fuentes-de-datos.md](../docs/fuentes-de-datos.md)
 
 ## Tareas
 

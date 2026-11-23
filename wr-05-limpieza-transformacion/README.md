@@ -7,7 +7,7 @@ Limpiar un dataset realista de principio a fin con PySpark.
 
 ## Datos
 - Citi Bike (CSV reales de viajes): https://citibikenyc.com/system-data ✅
-- Más fuentes: [docs/fuentes-de-datos.md](../../docs/fuentes-de-datos.md)
+- Más fuentes: [docs/fuentes-de-datos.md](../docs/fuentes-de-datos.md)
 
 ## Tareas
 

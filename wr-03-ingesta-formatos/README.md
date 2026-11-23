@@ -8,7 +8,7 @@ Saber ingerir cualquier formato de fichero que te lancen, incluidos los "difíci
 ## Datos
 - JSONPlaceholder (feed JSON de prueba): https://jsonplaceholder.typicode.com/ ✅
 - Datos abiertos España (CSV/XLSX reales): https://datos.gob.es/ ✅
-- Más fuentes verificadas: [docs/fuentes-de-datos.md](../../docs/fuentes-de-datos.md)
+- Más fuentes verificadas: [docs/fuentes-de-datos.md](../docs/fuentes-de-datos.md)
 
 ## Tareas
 

@@ -15,7 +15,7 @@ Leer todos los formatos del proyecto Zenviro (RRHH) desde el Data Lake hacia el 
 | trainings, employee_trainings | CSV |
 | benefits, employee_benefits | Parquet |
 
-> **Datos**: los ficheros vienen con el curso. Si quieres practicar con formatos reales adicionales, usa las [fuentes públicas verificadas](../../docs/fuentes-de-datos.md).
+> **Datos**: los ficheros vienen con el curso. Si quieres practicar con formatos reales adicionales, usa las [fuentes públicas verificadas](../docs/fuentes-de-datos.md).
 
 ## Tareas
 
