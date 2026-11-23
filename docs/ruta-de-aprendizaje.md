@@ -16,6 +16,17 @@ Esta es la ruta oficial del programa. Está diseñada para que **no te saltes na
 
 > ⚠️ **Regla de oro de seguridad**: desde el primer día, cualquier credencial (token de Databricks, API keys) va en Databricks Secrets o variables de entorno — nunca en código. Este repo es público.
 
+## ¿Te atascas? Orden de recursos (sin pedir ayuda externa)
+
+1. **Relee el README del módulo** — la sección *Por qué importa* suele responder al "¿para qué?" y los *Recursos* apuntan a la sección exacta de la documentación.
+2. **Databricks Assistant** — el asistente de IA integrado en el propio workspace: escríbele en la celda qué quieres hacer o pégale el error; genera y corrige código en contexto.
+3. **Documentación oficial** — https://docs.databricks.com/ (usa el buscador; es la fuente que siempre está al día cuando la UI cambia).
+4. **`correccion/SOLUCION.md`** — léela entera: explica el porqué de cada decisión y los errores comunes (probablemente el tuyo está ahí).
+5. **Preguntas del módulo** (track dbx) — si fallas preguntas de un tema, ese tema no está dominado: repásalo antes de seguir.
+6. **Bitácora** — anota el atasco: medio se resuelve al escribirlo, y si no, queda registrado para repasar.
+
+Si nada de eso lo desbloquea, déjalo anotado en la bitácora y continúa con el siguiente módulo si no es prerrequisito: muchos conceptos "encajan" al verlos en uso un módulo después.
+
 ## Fase 1 — Fundamentos y certificación (track `dbx`, en orden estricto)
 
 Los módulos `dbx` son **secuenciales**: cada uno asume el anterior. No los reordenes.
