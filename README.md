@@ -101,11 +101,13 @@ Proyectos grandes tipo portfolio real. Cada uno **une varios módulos** de los t
 | 03 | [Fábrica de extracción de documentos](cap-03-fabrica-extraccion-documentos) | ai-14, ai-03 | Information Extraction: 31% del uso de Agent Bricks |
 | 04 | [Soporte al cliente con IA gobernada](cap-04-soporte-cliente-gobernado) | ai-02, ai-07, ai-09, ai-12 | Clasificación de soporte (top 3); multi-modelo (78% de empresas) |
 | 05 | [Multiagente supervisor gobernado](cap-05-multiagente-supervisor-gobernado) | ai-15, ai-05, ai-11 | Supervisor Agent nº1 (37%); gobernanza 12x, evaluación 6x |
+| 06 | [Smart City con Kafka](cap-06-smart-city-kafka) | dbx-05→10, cap-01 | Vídeo Smart City (Code with Yu): 5 fuentes IoT → Kafka propio → streaming → AI/BI |
 
 ### Vídeos de referencia
 
 - [Databricks End-To-End Project | Zero-To-Expert](https://www.youtube.com/watch?v=vy4G86q1rQY) — plataforma de restaurantes con Event Hub, Azure SQL, UC, SDP, Lakeflow Connect CDC, sentimiento con Mosaic AI y AI/BI (índice de capítulos dentro de `cap-01`).
 - [Full End-to-End Data Engineering Project in Databricks](https://www.youtube.com/watch?v=SSz7HiyQN1M) — proyecto E2E medallion (refuerzo de `cap-01`).
+- [Smart City End-to-End Realtime Data Streaming Pipeline](https://www.youtube.com/watch?v=Vv_fvwF41_0) — Kafka + Spark streaming + IoT (base de `cap-06`; índice de capítulos dentro del módulo).
 
 ### Orden sugerido global
 

@@ -97,9 +97,11 @@ cap-02 (knowledge assistant) ← requiere ai-06, ai-01, ai-13
 cap-03 (fábrica documentos)  ← requiere ai-14, ai-03
 cap-04 (soporte gobernado)   ← requiere ai-02, ai-07, ai-09, ai-12
 cap-05 (multiagente)         ← requiere ai-15, ai-05, ai-11
+cap-06 (smart city + Kafka)  ← requiere dbx-05…10; cap-01 recomendado
 ```
 
 - Empieza por `cap-01` siempre: es el que consolida toda la ingeniería de datos.
+- `cap-06` es la opción si tienes un servidor donde correr Kafka (o quieres aprender streaming real con Docker en local); su alternativa sin servidor está incluida en el propio módulo.
 - Los demás elígelos según el rol que busques (cada uno mapea a un caso de uso top del *State of AI Agents*).
 
 ## Checklist global de "no me he saltado nada"
