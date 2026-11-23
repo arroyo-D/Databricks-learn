@@ -1,0 +1,21 @@
+# Credenciales y secretos — NUNCA commitear
+.databrickscfg
+.env
+.env.*
+credentials*.json
+*_key*
+*.pem
+*.token
+secrets*
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Databricks
+.databricks/
+
+# SO
+.DS_Store
