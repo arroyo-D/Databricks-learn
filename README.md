@@ -6,6 +6,7 @@ Programa completo de aprendizaje de Databricks, de cero a certificación y más 
 2. **Libro**: *Practical Python Data Wrangling and Data Quality* (McGregor) → track `wr-XX`
 3. **Libro**: *Designing Data Governance from the Ground Up* (Maffeo) → track `gov-XX`
 4. **Guías BASWE**: *15 AI Engineering Projects* + *The AI Pivot Field Guide 2026* → track `ai-XX`
+5. **Informe oficial**: *Databricks State of AI Agents* + vídeos de proyectos E2E → track `cap-XX` (proyectos integradores)
 
 ## Estructura
 
@@ -81,12 +82,29 @@ Adaptación de los 15 proyectos de la guía BASWE *15 AI Engineering Projects* a
 | 14 | [Procesador de documentos](ai-14-procesador-documentos) | 🔴 | `ai_parse_document`, Auto Loader, DQX |
 | 15 | [Orquestación multi-agente](ai-15-orquestacion-agentes) | 🔴 | Agent Framework, UC Functions, MLflow Tracing |
 
-### Orden sugerido dentro del track AI
+## Track 5 — Proyectos integradores (cap)
 
-1. **Base de evaluación**: ai-01 → ai-02 → ai-07 (los 🟡 más directos)
-2. **Recuperación y generación**: ai-06 → ai-08 → ai-04
-3. **Producción seria**: ai-03 → ai-09 → ai-11 → ai-12 → ai-13
-4. **Proyectos cumbre**: ai-10 → ai-14 → ai-15
+Proyectos grandes tipo portfolio real. Cada uno **une varios módulos** de los tracks anteriores en un solo sistema completo, inspirado en los casos de uso más frecuentes del informe oficial *Databricks State of AI Agents* (datos de +20.000 organizaciones) y en los vídeos de proyectos end-to-end enlazados abajo. Son la prueba final: si completas uno de estos, dominas todo lo que integra.
+
+| # | Proyecto | Une | Inspiración |
+|---|---|---|---|
+| 01 | [Plataforma de restaurantes E2E](cap-01-plataforma-restaurantes) | dbx-01→10 | Vídeo Zero-To-Expert: streaming + batch + medallion + sentimiento IA + AI/BI |
+| 02 | [Knowledge Assistant empresarial](cap-02-knowledge-assistant) | ai-06, ai-01, ai-13 | Knowledge Assistant (Agent Brick); 40% de casos de uso = experiencia de cliente |
+| 03 | [Fábrica de extracción de documentos](cap-03-fabrica-extraccion-documentos) | ai-14, ai-03 | Information Extraction: 31% del uso de Agent Bricks |
+| 04 | [Soporte al cliente con IA gobernada](cap-04-soporte-cliente-gobernado) | ai-02, ai-07, ai-09, ai-12 | Clasificación de soporte (top 3); multi-modelo (78% de empresas) |
+| 05 | [Multiagente supervisor gobernado](cap-05-multiagente-supervisor-gobernado) | ai-15, ai-05, ai-11 | Supervisor Agent nº1 (37%); gobernanza 12x, evaluación 6x |
+
+### Vídeos de referencia
+
+- [Databricks End-To-End Project | Zero-To-Expert](https://www.youtube.com/watch?v=vy4G86q1rQY) — plataforma de restaurantes con Event Hub, Azure SQL, UC, SDP, Lakeflow Connect CDC, sentimiento con Mosaic AI y AI/BI (índice de capítulos dentro de `cap-01`).
+- [Full End-to-End Data Engineering Project in Databricks](https://www.youtube.com/watch?v=SSz7HiyQN1M) — proyecto E2E medallion (refuerzo de `cap-01`).
+
+### Orden sugerido global
+
+1. `dbx-00` → `dbx-14` (base + certificación)
+2. `wr-01` → `wr-08` en paralelo si te falta Python
+3. `ai-01` → elegir 2–3 del track ai
+4. `cap-01` → `cap-05` como proyectos finales de portfolio
 
 ## Fuentes de datos
 
