@@ -5,6 +5,11 @@
 ## Objetivo
 Crear el artefacto más útil de cualquier programa de gobernanza: un diccionario de datos vivo dentro de UC.
 
+
+## Por qué importa
+
+El diccionario de datos es el artefacto más útil y menos valorado: una definición acordada por campo de negocio ("¿qué es exactamente un 'cliente activo'?"). En Databricks vive en comentarios de tablas y columnas de UC, etiquetas y el buscador de Catalog. Este módulo lo crea de verdad y monta el consejo que lo mantiene vivo.
+
 ## Tareas
 
 ### 1. Consejo (documento)
@@ -25,6 +30,16 @@ Crear el artefacto más útil de cualquier programa de gobernanza: un diccionari
 
 ### 5. Detección de PII
 - [ ] Escribe una función que escanee nombres de columna buscando patrones PII (email, phone, salary, dni...) y proponga tags
+
+## Criterios de éxito
+
+- [ ] 10+ términos de negocio definidos, aprobados y escritos como comentarios UC.
+- [ ] Etiquetas (tags) de sensibilidad aplicadas a columnas con PII sintética.
+- [ ] Acta de una reunión de consejo (asistentes, decisiones, conflictos resueltos).
+
+## Recursos
+
+- Documentación oficial: https://docs.databricks.com/ (*Data governance with Unity Catalog*)
 
 ## Entregable
 `docs/consejo.md` + notebook `notebooks/gov03_diccionario.sql` + tabla `data_dictionary`.

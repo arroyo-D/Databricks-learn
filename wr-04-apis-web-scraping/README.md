@@ -5,6 +5,11 @@
 ## Objetivo
 Consumir datos web de forma correcta y segura: APIs JSON/XML, claves protegidas con Secrets, y scraping como último recurso.
 
+
+## Por qué importa
+
+Muchas fuentes empresariales no son ficheros: son APIs REST (JSONPlaceholder, FRED) o páginas web. Este módulo cubre peticiones HTTP desde Databricks, paginación, rate limiting, autenticación por API key y almacenamiento de la respuesta cruda en Bronze antes de cualquier transformación. El patrón "API → Bronze → Silver" es pan de cada día.
+
 ## Datos (URLs verificadas)
 - API sin auth: https://jsonplaceholder.typicode.com/ ✅
 - API con key gratuita: FRED https://fred.stlouisfed.org/docs/api/fred/ ✅ (key: https://fredaccount.stlouisfed.org/apikeys)
@@ -38,6 +43,20 @@ Consumir datos web de forma correcta y segura: APIs JSON/XML, claves protegidas 
 
 ## ⚠️ Seguridad
 Las API keys van en **Databricks Secrets**, jamás en código ni en Git. Este repo es público: revisa antes de cada push.
+
+## Criterios de éxito
+
+- [ ] API consumida con paginación y reintentos ante errores 429/500.
+- [ ] Respuestas crudas guardadas en Bronze tal cual llegaron.
+- [ ] API key en Secrets y código que la lee con `dbutils.secrets.get`.
+
+## Recursos
+
+- Fuentes de datos (URLs verificadas): [docs/fuentes-de-datos.md](../docs/fuentes-de-datos.md)
+
+## ⚠️ Seguridad
+
+Las API keys (p. ej. FRED) van en **Databricks Secrets**, nunca en el notebook ni en Git. Este repo es público: una key commiteada hay que considerarla comprometida y rotarla.
 
 ## Entregable
 Notebooks en `notebooks/` + `docs/etica_api.md` + `.gitignore`.

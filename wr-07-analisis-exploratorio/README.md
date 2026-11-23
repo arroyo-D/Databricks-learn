@@ -5,6 +5,11 @@
 ## Objetivo
 Hacer un EDA completo y honesto sobre un dataset real.
 
+
+## Por qué importa
+
+Antes de modelar o transformar hay que mirar: distribuciones, nulos, correlaciones, outliers. El EDA en Databricks usa Spark para los agregados (millones de filas) y pandas/plotting solo sobre muestras o resultados agregados — un patrón que debes interiorizar para no reventar el driver. Usarás los datos de taxi de NYC y Citi Bike, datasets reales y verificados.
+
 ## Datos
 - NYC Taxi integrado en Databricks: `samples.nyctaxi.trips` (sin descarga) ✅
 - NYC TLC Trip Records (Parquet mensual): https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page ✅
@@ -35,6 +40,16 @@ Hacer un EDA completo y honesto sobre un dataset real.
 
 ### 6. La pregunta de los 2M$
 - [ ] Formula UNA pregunta de negocio cuantificable y respóndela con datos, mostrando el cálculo paso a paso
+
+## Criterios de éxito
+
+- [ ] Perfil completo del dataset (nulos, cardinalidad, distribuciones) en una celda reutilizable.
+- [ ] 3 hipótesis de negocio formuladas y comprobadas con datos.
+- [ ] Agregación en Spark → muestra a pandas → visualización, sin `toPandas()` sobre la tabla entera.
+
+## Recursos
+
+- Fuentes de datos (taxi NYC, Citi Bike): [docs/fuentes-de-datos.md](../docs/fuentes-de-datos.md)
 
 ## Entregable
 Notebook `notebooks/wr07_eda.py` con secciones Markdown explicando CADA hallazgo (no solo código).

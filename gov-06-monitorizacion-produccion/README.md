@@ -5,6 +5,11 @@
 ## Objetivo
 Poner en producción todo lo aprendido: monitorización automática de calidad, seguridad y linaje.
 
+
+## Por qué importa
+
+La gobernanza no termina en el despliegue: hay que vigilar calidad, uso y coste en producción. Este módulo usa las system tables de Databricks (accesos, jobs, billing) y Lakehouse Monitoring para responder: ¿quién usa qué?, ¿qué pipeline se degrada?, ¿dónde se gasta de más? Cierra el ciclo del framework del gov-01.
+
 ## Tareas
 
 ### 1. Gobernanza del ciclo de vida
@@ -31,6 +36,16 @@ Poner en producción todo lo aprendido: monitorización automática de calidad, 
 ### 6. Despliegue como unidad + regulación
 - [ ] Cada tabla nueva = unidad desplegable (DDL + docs + expectations + tags) — revisa tu flujo de GOV-05
 - [ ] `docs/regulacion.md`: qué cambios regulatorios afectarían a Zenviro (GDPR: derecho al olvido → cómo borrarías a un empleado de todas las capas)
+
+## Criterios de éxito
+
+- [ ] 3 queries sobre system tables respondiendo preguntas de gobierno reales.
+- [ ] Monitor de calidad activo sobre una tabla con alerta configurada.
+- [ ] Informe mensual de salud de datos (plantilla reutilizable) generado.
+
+## Recursos
+
+- Documentación oficial: https://docs.databricks.com/ (*Administration* → system tables; *Lakehouse Monitoring*)
 
 ## Entregable
 Job de auditoría + `docs/` (retencion, regulacion) + notebook `notebooks/gov06_seguridad_drift.sql`.

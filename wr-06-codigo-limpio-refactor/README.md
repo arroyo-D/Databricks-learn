@@ -5,6 +5,11 @@
 ## Objetivo
 Convertir notebooks "espagueti" en código reutilizable, testeable y documentado.
 
+
+## Por qué importa
+
+El código de datos se lee 10 veces más de lo que se escribe: notebooks monolíticos de 40 celdas son deuda técnica. Este módulo aplica refactorización al mundo Databricks: funciones pequeñas, nombres que dicen qué hacen, configuración fuera del código, tests con pytest y notebooks que importan módulos `.py` en vez de repetir lógica. Es lo que diferencia un analista de un ingeniero.
+
 ## Tareas
 
 ### 1. Cuándo crear una función
@@ -32,6 +37,16 @@ Convertir notebooks "espagueti" en código reutilizable, testeable y documentado
 ### 6. Documentación
 - [ ] Docstrings estilo Google en todas las funciones
 - [ ] Genera ayuda con `help(tu_funcion)` en una celda
+
+## Criterios de éxito
+
+- [ ] Notebook refactorizado a funciones en un módulo `.py` importable.
+- [ ] 3+ tests de pytest pasando sobre la lógica de transformación.
+- [ ] Sin valores hardcodeados: configuración en widgets, YAML o variables.
+
+## Recursos
+
+- Documentación oficial: https://docs.databricks.com/ (*Develop on Databricks*)
 
 ## Entregable
 `src/transforms.py` + `tests/test_transforms.py` + notebook refactorizado.

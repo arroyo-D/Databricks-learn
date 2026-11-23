@@ -5,6 +5,11 @@
 ## Objetivo
 Aprender a evaluar la calidad de un dataset de forma sistemática: integridad y adecuación (fit).
 
+
+## Por qué importa
+
+La calidad de datos es el tema central del libro de McGregor y la razón por la que existen las capas Silver y las expectations: los datos reales llegan sucios, incompletos y duplicados. Este módulo te da el vocabulario (validez, completitud, consistencia, unicidad, actualidad) que luego aplicarás con DQX y SDP. Sin él, "limpiar datos" es quitar nulos al azar; con él, es ingeniería.
+
 ## Conceptos
 - **Integridad**: ¿el dato es correcto y fiable? (pedigree, actualidad, completitud, consistencia...)
 - **Fit (adecuación)**: ¿sirve para MI pregunta? (validez, fiabilidad, representatividad)
@@ -32,6 +37,16 @@ Sobre un DataFrame de Spark:
 
 ### 4. Expectations (avanzado)
 - [ ] Traduce 3 hallazgos a expectations de Lakeflow SDP (`expect_or_drop`) para que no vuelvan a colarse
+
+## Criterios de éxito
+
+- [ ] Las 5 dimensiones de calidad explicadas con un ejemplo propio de cada una.
+- [ ] Dataset inspeccionado con un informe de calidad por columna.
+- [ ] Reglas de calidad priorizadas: cuáles bloquean y cuáles solo avisan.
+
+## Recursos
+
+- Fuentes de datos: [docs/fuentes-de-datos.md](../docs/fuentes-de-datos.md)
 
 ## Entregable
 Notebook `notebooks/wr02_profiling.py` + `docs/informe_calidad.md`.

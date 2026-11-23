@@ -5,6 +5,11 @@
 ## Objetivo
 Dejar el entorno listo y dominar lo básico: workspace, clusters, notebooks, comandos mágicos, DBFS y dbutils.
 
+
+## Por qué importa
+
+Sin workspace no hay proyecto: este módulo deja tu entorno listo y cubre los conceptos de plataforma que son el **6% del examen** (dominio *Intelligence Platform*): diferencia entre Data Warehouse, Data Lake y Lakehouse, arquitectura medallón y cómo ejecuta Spark (driver, executors, slots). Son las preguntas "de cultura general" del examen y de cualquier entrevista técnica de datos.
+
 ## Tareas
 
 ### 1. Teoría mínima (leer del PDF)
@@ -31,6 +36,16 @@ Dejar el entorno listo y dominar lo básico: workspace, clusters, notebooks, com
 ### 5. Debug
 - [ ] Provocar un error a propósito en una celda y localizar el traceback
 - [ ] Usar el debugger del notebook con un breakpoint
+
+## Criterios de éxito
+
+- [ ] Cluster creado, usado y auto-terminado (no dejado encendido).
+- [ ] Notebook con celdas en Python y SQL ejecutadas, y los 6 comandos mágicos probados.
+- [ ] Puedes explicar con tus palabras qué es un lakehouse y qué hace el driver de Spark.
+
+## Recursos
+
+- Documentación oficial: https://docs.databricks.com/ (*Get started tutorials*, *Workspace UI*)
 
 ## Entregable
 Notebook(s) exportados a `notebooks/` + capturas en `docs/`.

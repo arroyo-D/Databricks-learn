@@ -3,6 +3,11 @@
 ## Objetivo
 Ejecutar código Spark desde tu máquina local (VS Code) contra el cluster de Databricks.
 
+
+## Por qué importa
+
+Databricks Connect te permite desarrollar en tu IDE local (VS Code, PyCharm) ejecutando contra el cluster remoto: el flujo de trabajo profesional real. Es la primera mitad del dominio CI/CD (**10%**): código en Git, tests locales, ejecución remota. Además es la base para los proyectos AI que corren fuera de notebooks.
+
 ## Conceptos
 - Databricks Connect = cliente ligero: tu código corre local, el cómputo en el cluster remoto
 - Ideal para desarrollo con IDE, tests unitarios y debugging local
@@ -29,6 +34,20 @@ Ejecutar código Spark desde tu máquina local (VS Code) contra el cluster de Da
 
 ## ⚠️ Seguridad
 El token va en `~/.databrickscfg` (local, en `.gitignore`) — **nunca** en el código ni en Git.
+
+## Criterios de éxito
+
+- [ ] Script local ejecutando contra el cluster remoto vía Connect.
+- [ ] Tests unitarios de una función de transformación corriendo en local (pytest).
+- [ ] Entorno reproducible: requirements/uv + README de setup.
+
+## Recursos
+
+- Documentación oficial: https://docs.databricks.com/ (*Develop on Databricks* → Databricks Connect)
+
+## ⚠️ Seguridad
+
+El token de Databricks vive en `~/.databrickscfg` (que está en el `.gitignore`) o en variables de entorno. **Nunca** en el código ni en notebooks commiteados. Si sospechas que un token se filtró, revócalo y genera otro.
 
 ## Entregable
 Código en `src/`, tests en `tests/`, `requirements.txt` y notas de configuración.

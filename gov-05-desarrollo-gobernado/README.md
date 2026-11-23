@@ -5,6 +5,11 @@
 ## Objetivo
 Integrar la gobernanza en el flujo de desarrollo: naming, convenciones, entornos y revisión por pares.
 
+
+## Por qué importa
+
+Gobernar el desarrollo significa que cada pipeline nuevo nace ya gobernado: catálogo correcto, convenciones de nombre, propietario asignado, calidad declarada y revisión por pares. Este módulo convierte los módulos dbx en práctica gobernada: las convenciones que escribas aquí son las que luego aplicarás en los capstones sin pensar.
+
 ## Tareas
 
 ### 1. Convenciones
@@ -30,6 +35,16 @@ Integrar la gobernanza en el flujo de desarrollo: naming, convenciones, entornos
 
 ### 5. Room to fail
 - [ ] Crea un schema `sandbox` con permisos amplios para experimentación y cuarentena de datos dudosos
+
+## Criterios de éxito
+
+- [ ] Convenciones de nombrado y estructura de catálogos escritas y aplicadas.
+- [ ] Checklist de "pipeline gobernado" usado en un ejercicio del track dbx.
+- [ ] Pull request revisado con la checklist (rol de revisor incluido).
+
+## Recursos
+
+- Documentación oficial: https://docs.databricks.com/ (*Data governance*, *Develop on Databricks*)
 
 ## Entregable
 `docs/convenciones.md` + `notebooks/gov05_nueva_tabla.sql` documentando el flujo completo + PR de ejemplo.

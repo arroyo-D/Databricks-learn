@@ -5,6 +5,11 @@
 ## Objetivo
 Saber ingerir cualquier formato de fichero que te lancen, incluidos los "difíciles".
 
+
+## Por qué importa
+
+CSV, JSON, XML, Excel, Parquet: cada formato tiene trampas propias (encodings, tipos inferidos mal, JSON anidado) y un coste distinto. Este módulo te enseña a leerlos todos en Spark y a elegir: por qué Parquet para analítica, por qué CSV es un formato de intercambio y no de almacenamiento. Conecta directamente con dbx-02 y dbx-06.
+
 ## Datos
 - JSONPlaceholder (feed JSON de prueba): https://jsonplaceholder.typicode.com/ ✅
 - Datos abiertos España (CSV/XLSX reales): https://datos.gob.es/ ✅
@@ -34,6 +39,16 @@ Saber ingerir cualquier formato de fichero que te lancen, incluidos los "difíci
 
 ### 6. Reto
 - [ ] Un CSV "roto": comillas sin cerrar, filas con columnas de más, encoding latin-1. Ingiérelo usando opciones (`mode`, `encoding`, `quote`, `escape`, `badRecordsPath`)
+
+## Criterios de éxito
+
+- [ ] Los 5 formatos leídos y escritos correctamente en Databricks.
+- [ ] Un JSON anidado aplanado con funciones de Spark.
+- [ ] Explicado con números (tamaño y tiempo) por qué Parquet > CSV para analítica.
+
+## Recursos
+
+- Fuentes de datos: [docs/fuentes-de-datos.md](../docs/fuentes-de-datos.md)
 
 ## Entregable
 Notebook `notebooks/wr03_formatos.py` con una sección por formato + `docs/formatos.md` (tabla: formato → opciones clave).

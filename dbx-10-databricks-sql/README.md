@@ -3,6 +3,11 @@
 ## Objetivo
 Usar la cara analítica de Databricks: SQL Warehouse, editor SQL, queries, dashboards, Genie y alerts sobre los datos Gold de Zenviro.
 
+
+## Por qué importa
+
+Databricks SQL es la cara analítica de la plataforma: SQL warehouses serverless, queries, dashboards y Genie. Pertenece al dominio de plataforma y es donde tus datos Gold se convierten en decisiones. Saber elegir el tamaño del warehouse, cachear resultados y montar un dashboard AI/BI es lo que separa "ingeniero que carga datos" de "ingeniero que entrega valor".
+
 ## Tareas
 
 ### 1. SQL Warehouse
@@ -30,6 +35,16 @@ Usar la cara analítica de Databricks: SQL Warehouse, editor SQL, queries, dashb
 ### 5. Alerts
 - [ ] Crear una alerta: avisar si el gasto salarial total de alguna ubicación supera un umbral
 - [ ] Configurar destino de notificación (email)
+
+## Criterios de éxito
+
+- [ ] SQL warehouse serverless creado con auto-stop configurado.
+- [ ] Dashboard AI/BI con 3+ visualizaciones sobre tu Gold.
+- [ ] Pregunta en lenguaje natural resuelta con Genie (y entendido por qué funciona).
+
+## Recursos
+
+- Documentación oficial: https://docs.databricks.com/ (*Data warehousing*, *AI/BI*)
 
 ## Entregable
 Exportar definiciones del dashboard si es posible + capturas en `docs/`.

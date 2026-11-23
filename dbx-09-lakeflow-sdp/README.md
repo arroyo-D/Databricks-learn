@@ -3,6 +3,11 @@
 ## Objetivo
 Construir un pipeline declarativo completo (proyecto rideshare: users, drivers, vehicles, payments, trips) con streaming tables, expectations, SCD2 y vistas materializadas.
 
+
+## Por qué importa
+
+Spark Declarative Pipelines (SDP, antes DLT) cambia el paradigma: declaras QUÉ tablas quieres y sus reglas de calidad, y Databricks decide CÓMO ejecutarlas, con linaje y event log automáticos. Es el **16% del examen** (Lakeflow) y la dirección a la que empuja toda la plataforma. Las expectations (expect/drop/fail) son pregunta casi segura.
+
 ## Conceptos
 - **Streaming table**: ingesta incremental (Auto Loader)
 - **Materialized view**: resultado de una query, refrescado por el pipeline
@@ -36,6 +41,16 @@ Construir un pipeline declarativo completo (proyecto rideshare: users, drivers, 
 
 ### 6. Ejecutar
 - [ ] Full refresh vs refresco incremental: ¿qué tablas se recalculan?
+
+## Criterios de éxito
+
+- [ ] Pipeline con capas bronze/silver/gold declarativas funcionando.
+- [ ] Expectations en los tres modos (warn, drop, fail) con registros de prueba para cada una.
+- [ ] Event log consultado para diagnosticar una expectativa violada.
+
+## Recursos
+
+- Documentación oficial: https://docs.databricks.com/ (*Lakeflow Spark Declarative Pipelines*)
 
 ## Entregable
 Código del pipeline en `pipeline/` (SQL y Python) + captura del grafo en `docs/`.

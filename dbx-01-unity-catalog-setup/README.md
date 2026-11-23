@@ -3,6 +3,11 @@
 ## Objetivo
 Configurar la gobernanza desde cero: metastore, credenciales de almacenamiento, external locations y catálogo del proyecto.
 
+
+## Por qué importa
+
+Unity Catalog es la capa de gobernanza de todo Databricks y el **15% del examen** (dominio *Governance*). Cada tabla, volumen, modelo o función que crees a partir de aquí vivirá en su modelo de tres niveles `catálogo → esquema → tabla`, y cada permiso que concedas usará su sintaxis. Entenderlo aquí te ahorra confusiones en todos los módulos siguientes.
+
 ## Conceptos (leer del PDF)
 - Modelo de objetos: **Metastore → Catalog → Schema → Table/View/Function/Volume**
 - Metastore = contenedor de nivel superior por región
@@ -28,6 +33,16 @@ Configurar la gobernanza desde cero: metastore, credenciales de almacenamiento, 
 ### 4. Permisos
 - [ ] Conceder `USE CATALOG` y `USE SCHEMA` a tu usuario
 - [ ] Probar `GRANT SELECT` / `REVOKE` sobre un schema
+
+## Criterios de éxito
+
+- [ ] Modelo de tres niveles creado (catálogo, esquema, tabla) y consultable.
+- [ ] Permisos concedidos y revocados con GRANT/REVOKE a otro principal.
+- [ ] Sabes decir qué es un metastore y qué relación tiene con el workspace.
+
+## Recursos
+
+- Documentación oficial: https://docs.databricks.com/ (*Data governance with Unity Catalog*)
 
 ## Entregable
 Notebook `notebooks/01_unity_catalog.sql` (o `.py` con `%sql`) con todos los comandos ejecutados.

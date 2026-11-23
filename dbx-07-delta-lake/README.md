@@ -3,6 +3,11 @@
 ## Objetivo
 Dominar Delta Lake: transacciones ACID, transaction log, time travel, VACUUM, MERGE, COPY INTO y compactación.
 
+
+## Por qué importa
+
+Delta Lake es el formato que hace posible el lakehouse: transacciones ACID sobre object storage, time travel y optimizaciones como OPTIMIZE/ZORDER. Cae en transformación (**22%**) y optimización (**10%**). Todo lo que has escrito en módulos anteriores era Delta — ahora aprendes por qué funciona y cómo mantenerlo sano (VACUUM incluido).
+
 ## Tareas
 
 ### 1. CREATE TABLE en Delta
@@ -30,6 +35,16 @@ Dominar Delta Lake: transacciones ACID, transaction log, time travel, VACUUM, ME
 - [ ] Generar muchos archivos pequeños y ejecutar `OPTIMIZE`
 - [ ] `OPTIMIZE ... ZORDER BY (col)`
 - [ ] Crear una tabla con **Liquid Clustering**: `CLUSTER BY (col)` y comparar
+
+## Criterios de éxito
+
+- [ ] Time travel usado para recuperar una tabla tras un DELETE erróneo.
+- [ ] OPTIMIZE + ZORDER aplicados y explicado cuándo NO usar ZORDER.
+- [ ] Historial (`DESCRIBE HISTORY`) interpretado: versiones, operaciones, métricas.
+
+## Recursos
+
+- Documentación oficial: https://docs.databricks.com/ (*Data engineering* → Delta Lake)
 
 ## Entregable
 Notebook `notebooks/07_delta_lake.sql` + nota `docs/delta_vs_parquet.md`.

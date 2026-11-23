@@ -5,6 +5,11 @@
 ## Objetivo
 Dominar lo esencial de Python (variables, funciones, bucles, condicionales, errores) dentro de un notebook de Databricks, con un mini-caso de datos reales.
 
+
+## Por qué importa
+
+Todo lo que harás en Databricks —transformaciones, pipelines, agentes— se escribe en Python. Este módulo asegura la base: tipos, funciones, bucles, manejo de errores. Si vienes de otro lenguaje o llevas tiempo sin programar, es tu calentamiento; si ya dominas Python, hazlo rápido y pasa al siguiente —pero hazlo, porque el mini-caso con datos reales fija el patrón "pseudocódigo → código" que usarás siempre.
+
 ## Datos
 - Citi Bike (datos reales de viajes): https://citibikenyc.com/system-data ✅ verificada en [docs/fuentes-de-datos.md](../docs/fuentes-de-datos.md)
 
@@ -34,6 +39,16 @@ Dominar lo esencial de Python (variables, funciones, bucles, condicionales, erro
 
 ### 6. Versionado
 - [ ] Conecta el notebook a este repo con Databricks Git folders y haz tu primer commit desde la UI
+
+## Criterios de éxito
+
+- [ ] Las tareas completadas en un notebook sin errores pendientes.
+- [ ] Función propia escrita, probada y reutilizada en otra celda.
+- [ ] Primer commit hecho desde la propia UI de Databricks (Git folders).
+
+## Recursos
+
+- Fuentes de datos: [docs/fuentes-de-datos.md](../docs/fuentes-de-datos.md)
 
 ## Entregable
 Notebook `notebooks/wr01_fundamentos.py` commiteado desde Databricks.

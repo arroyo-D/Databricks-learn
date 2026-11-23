@@ -5,6 +5,11 @@
 ## Objetivo
 Hacer una auditoría del estado actual de tus datos y convertirla en un roadmap priorizado.
 
+
+## Por qué importa
+
+La gobernanza se implanta por oleadas, no de golpe: este módulo enseña a evaluar la madurez actual, priorizar dominios (¿qué datos duelen más?) y construir un roadmap realista de 2-3 oleadas con métricas de adopción. Es la diferencia entre un programa que sobrevive al primer trimestre y uno que muere en la presentación inicial.
+
 ## Tareas
 
 ### 1. Auditoría automática
@@ -26,6 +31,16 @@ Hacer una auditoría del estado actual de tus datos y convertirla en un roadmap 
 ### 5. Roadmap priorizado
 - [ ] Tabla: iniciativa | impacto (1-5) | esfuerzo (1-5) | prioridad (impacto/esfuerzo) | trimestre
 - [ ] Top 3 iniciativas justificadas
+
+## Criterios de éxito
+
+- [ ] Evaluación de madurez por dominio con evidencias (no opiniones).
+- [ ] Roadmap de 2-3 oleadas con criterios de entrada/salida por oleada.
+- [ ] 3 métricas de adopción definidas y medibles en Databricks (p. ej. % tablas con owner).
+
+## Recursos
+
+- Documentación oficial: https://docs.databricks.com/ (*Administration*, system tables)
 
 ## Entregable
 `notebooks/gov04_auditoria.py` + `docs/` (proceso_actual, estado_deseado, metricas, roadmap).

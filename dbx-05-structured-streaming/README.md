@@ -3,6 +3,11 @@
 ## Objetivo
 Construir tu primer pipeline de streaming: leer archivos JSON como stream, transformar y escribir en Delta con checkpoint.
 
+
+## Por qué importa
+
+Structured Streaming reutiliza la misma API de DataFrame sobre datos que no paran de llegar — y es donde el examen mezcla ingesta (**21%**) con troubleshooting (**10%**): triggers, checkpoints, watermarks y el manejo de datos tardíos. Conceptualmente es el salto más importante: dejar de pensar en "tablas" para pensar en "flujos".
+
 ## Conceptos
 - Un stream es una **tabla sin límites**: cada micro-batch añade filas
 - **Checkpoint**: guarda el progreso para recuperación exactamente-una-vez
@@ -33,6 +38,16 @@ Construir tu primer pipeline de streaming: leer archivos JSON como stream, trans
 ### 5. Checkpoint
 - [ ] Borrar el checkpoint y volver a ejecutar: ¿qué pasa con los datos?
 - [ ] Cambiar el código sin borrar el checkpoint: ¿qué error aparece?
+
+## Criterios de éxito
+
+- [ ] Stream con checkpoint que sobrevive a un reinicio sin duplicar datos.
+- [ ] Watermark configurado y explicado (qué pasa con un evento que llega tarde).
+- [ ] Diferencia entre append, update y complete mode con ejemplo propio.
+
+## Recursos
+
+- Documentación oficial: https://docs.databricks.com/ (*Data engineering* → Structured Streaming)
 
 ## Entregable
 Notebook `notebooks/05_streaming.py` + breve nota en `docs/output_modes.md`.

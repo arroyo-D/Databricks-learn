@@ -3,6 +3,11 @@
 ## Objetivo
 Orquestar los notebooks del proyecto Zenviro como un Job con varias tareas, schedule y manejo de errores.
 
+
+## Por qué importa
+
+Un pipeline que solo corre cuando tú le das a "Run all" no es un pipeline: es un cuaderno. Lakeflow Jobs (16% del examen) es la capa de orquestación: tareas con dependencias, reintentos, timeouts, notificaciones y programación. Es la diferencia entre "juguete" y "producción", y la mitad de las preguntas de troubleshooting del examen viven aquí.
+
 ## Tareas
 
 ### 1. Preparar notebooks
@@ -31,6 +36,16 @@ Orquestar los notebooks del proyecto Zenviro como un Job con varias tareas, sche
 
 ### 6. Notificaciones
 - [ ] Configurar notificación por email on failure
+
+## Criterios de éxito
+
+- [ ] Job multi-tarea con dependencias correctas (no todo secuencial si hay paralelismo).
+- [ ] Política de reintentos y timeout configurada y justificada.
+- [ ] Alerta de fallo recibida (email/webhook) tras provocar un error.
+
+## Recursos
+
+- Documentación oficial: https://docs.databricks.com/ (*Lakeflow Jobs*)
 
 ## Entregable
 Definición del job exportada (JSON/YAML si es posible) en `jobs/` + capturas en `docs/`.

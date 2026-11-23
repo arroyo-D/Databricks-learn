@@ -5,6 +5,11 @@
 ## Objetivo
 Comunicar datos con visualizaciones correctas y honestas.
 
+
+## Por qué importa
+
+Un buen gráfico responde una pregunta; un mal gráfico decora. Este módulo cubre visualización efectiva en Databricks: gráficos nativos de notebooks, dashboards AI/BI y cuándo usar matplotlib/seaborn sobre datos agregados. Cierra el track wr entregando el resultado del análisis en forma que otra persona entienda en 30 segundos.
+
 ## Datos
 - NYC Taxi integrado: `samples.nyctaxi.trips` ✅
 - Cualquier tabla gold de los ejercicios dbx
@@ -34,6 +39,16 @@ Comunicar datos con visualizaciones correctas y honestas.
 
 ### 5. Honestidad visual
 - [ ] Encuentra (o fabrica) un gráfico engañoso y explica el truco en `docs/honestidad_visual.md`
+
+## Criterios de éxito
+
+- [ ] Dashboard con 4 visualizaciones, cada una respondiendo una pregunta explícita.
+- [ ] Un gráfico engañoso identificado y corregido (eje truncado, doble eje, etc.).
+- [ ] Narrativa: el dashboard cuenta una historia con principio y conclusión.
+
+## Recursos
+
+- Fuentes de datos: [docs/fuentes-de-datos.md](../docs/fuentes-de-datos.md)
 
 ## Entregable
 Notebook `notebooks/wr08_viz.py` + `docs/honestidad_visual.md`.

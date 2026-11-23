@@ -5,6 +5,11 @@
 ## Objetivo
 Limpiar un dataset realista de principio a fin con PySpark.
 
+
+## Por qué importa
+
+Aquí se junta todo lo anterior: strings sucios, fechas en formatos imposibles, duplicados, outliers. El módulo traslada las recetas del libro a PySpark (`regexp_replace`, `to_date` con formatos, `approx_count_distinct`, ventanas para deduplicar) sobre un dataset real y desagradable. Es el entrenamiento directo para la capa Silver de cualquier proyecto.
+
 ## Datos
 - Citi Bike (CSV reales de viajes): https://citibikenyc.com/system-data ✅
 - Más fuentes: [docs/fuentes-de-datos.md](../docs/fuentes-de-datos.md)
@@ -39,6 +44,16 @@ Limpiar un dataset realista de principio a fin con PySpark.
 
 ### 7. Gotchas
 - [ ] Documenta 3 gotchas que te hayan mordido (encoding, nulos vs vacíos, tipos implícitos...)
+
+## Criterios de éxito
+
+- [ ] Dataset con 5+ problemas distintos limpiado y cada regla documentada.
+- [ ] Deduplicación con ventana (row_number) justificando la clave elegida.
+- [ ] Tabla "quarantine" con los registros rechazados y el motivo.
+
+## Recursos
+
+- Fuentes de datos: [docs/fuentes-de-datos.md](../docs/fuentes-de-datos.md)
 
 ## Entregable
 Notebook `notebooks/wr05_limpieza.py` + `docs/gotchas.md`.
