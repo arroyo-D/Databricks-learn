@@ -1,10 +1,11 @@
 # Databricks Learn
 
-Programa completo de aprendizaje de Databricks, de cero a certificación, basado en:
+Programa completo de aprendizaje de Databricks, de cero a certificación y más allá, basado en:
 
 1. **Curso**: Databricks Certified Data Engineer Associate (Udatademy) → track `dbx-XX`
 2. **Libro**: *Practical Python Data Wrangling and Data Quality* (McGregor) → track `wr-XX`
 3. **Libro**: *Designing Data Governance from the Ground Up* (Maffeo) → track `gov-XX`
+4. **Guías BASWE**: *15 AI Engineering Projects* + *The AI Pivot Field Guide 2026* → track `ai-XX`
 
 ## Estructura
 
@@ -58,6 +59,35 @@ Cada módulo es una carpeta con:
 | 05 | [Desarrollo gobernado](gov-05-desarrollo-gobernado) |
 | 06 | [Monitorización en producción](gov-06-monitorizacion-produccion) |
 
+## Track 4 — AI Engineering sobre Databricks (ai)
+
+Adaptación de los 15 proyectos de la guía BASWE *15 AI Engineering Projects* a la plataforma Databricks (Foundation Model APIs, AI Gateway, Vector Search, MLflow, Lakeflow, Genie, Agent Framework). Nivel intermedio → avanzado. Cada proyecto está pensado para 10–14 días a 2–3 h/día; no hacen falta todos: 2–3 bien pulidos valen más que 15 a medias.
+
+| # | Proyecto | Nivel | Tecnología Databricks clave |
+|---|---|---|---|
+| 01 | [Detección de regresiones LLM (CI/CD)](ai-01-eval-regresiones-llm) | 🟡 | `ai_query`, Lakeflow Jobs, MLflow, AI/BI |
+| 02 | [Enrutador de costes LLM](ai-02-enrutador-costes-llm) | 🟡 | Model Serving, MLflow, system tables billing |
+| 03 | [Forense de pipelines de IA](ai-03-forense-pipelines-ia) | 🔴 | MLflow Tracing, Delta, judge loops |
+| 04 | [Docs autocurables](ai-04-docs-autocurables) | 🟡 | Vector Search, GitHub Actions, Connect |
+| 05 | [Arbitraje multi-crítico](ai-05-arbitraje-salidas-llm) | 🔴 | Multi-endpoint serving, AI Gateway, LangGraph |
+| 06 | [RAG híbrido](ai-06-rag-hibrido-vector-search) | 🔴 | Vector Search (híbrido), Agent Evaluation |
+| 07 | [Caché semántica LLM](ai-07-cache-semantica-llm) | 🟡 | Vector Search, Model Serving, AI/BI |
+| 08 | [Text-to-SQL con guardrails](ai-08-text-to-sql-guardrails) | 🟡 | Genie, SQL Warehouse, permisos UC |
+| 09 | [Prompt registry + A/B testing](ai-09-prompt-registry-ab-testing) | 🔴 | MLflow Prompt Registry (UC), scipy |
+| 10 | [Fine-tuning en dominio](ai-10-finetuning-dominio) | 🔴 | Foundation Model Training, MLflow |
+| 11 | [AI Gateway gobernado](ai-11-ai-gateway-gobernado) | 🔴 | AI Gateway, inference tables, External Models |
+| 12 | [Feature flags para IA](ai-12-feature-flags-ia) | 🔴 | Lakehouse Monitoring, streaming, rollback auto |
+| 13 | [Eval dataset automático](ai-13-eval-dataset-automatico) | 🟡 | Inference tables, clustering, auto-labeling |
+| 14 | [Procesador de documentos](ai-14-procesador-documentos) | 🔴 | `ai_parse_document`, Auto Loader, DQX |
+| 15 | [Orquestación multi-agente](ai-15-orquestacion-agentes) | 🔴 | Agent Framework, UC Functions, MLflow Tracing |
+
+### Orden sugerido dentro del track AI
+
+1. **Base de evaluación**: ai-01 → ai-02 → ai-07 (los 🟡 más directos)
+2. **Recuperación y generación**: ai-06 → ai-08 → ai-04
+3. **Producción seria**: ai-03 → ai-09 → ai-11 → ai-12 → ai-13
+4. **Proyectos cumbre**: ai-10 → ai-14 → ai-15
+
 ## Fuentes de datos
 
 Los ejercicios usan datasets públicos verificados: ver [docs/fuentes-de-datos.md](docs/fuentes-de-datos.md).
@@ -65,6 +95,7 @@ Los ejercicios usan datasets públicos verificados: ver [docs/fuentes-de-datos.m
 ## ⚠️ Seguridad (repo público)
 
 - **Nunca** commitees tokens, API keys, contraseñas ni archivos `.databrickscfg`.
-- Las credenciales van en Databricks Secrets (`dbutils.secrets`) o en variables de entorno locales.
+- Las credenciales van en Databricks Secrets (`dbutils.secrets`), GitHub Secrets o en variables de entorno locales.
 - Todos los tokens/keys que aparecen en los ejemplos son **placeholders** (`dapiXXXX...`, `TU_CLAVE`).
+- Los datasets de los ejercicios AI son **sintéticos o autocurados**: no subas emails, documentos ni logs con datos reales.
 - Revisa `git diff --cached` antes de cada push y mantén el `.gitignore` actualizado.
