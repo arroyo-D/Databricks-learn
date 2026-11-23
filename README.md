@@ -8,6 +8,10 @@ Programa completo de aprendizaje de Databricks, de cero a certificación y más 
 4. **Guías BASWE**: *15 AI Engineering Projects* + *The AI Pivot Field Guide 2026* → track `ai-XX`
 5. **Informe oficial**: *Databricks State of AI Agents* + vídeos de proyectos E2E → track `cap-XX` (proyectos integradores)
 
+## Empieza aquí
+
+👉 **[docs/ruta-de-aprendizaje.md](docs/ruta-de-aprendizaje.md)** — la ruta completa con prerrequisitos: qué necesitas antes de empezar (Fase 0), en qué orden hacer cada track y qué lecturas son obligatorias en cada punto. Diseñada para que no te saltes nada.
+
 ## Estructura
 
 Cada módulo es una carpeta con:
