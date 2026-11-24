@@ -22,13 +22,15 @@ Programa completo de aprendizaje de Databricks, de cero a certificación y más 
 
 📓 **[bitacora/PLANTILLA.md](bitacora/PLANTILLA.md)** — copia esta plantilla por cada módulo terminado: qué aprendiste, qué te costó y cómo contarlo en una entrevista.
 
+📚 **[docs/documentacion.md](docs/documentacion.md)** — índice completo de documentación oficial: todos los temas de la plataforma con qué estudiar de cada uno y el enlace verificado (incluye features de pago que caen en el examen aunque no estén en Free Edition).
+
 ## Estructura
 
 Cada módulo es una carpeta con:
 
 - `README.md` → enunciado: objetivos, tareas con checklist y entregable
 - `correccion/SOLUCION.md` → solución con código y puntos clave (consúltala DESPUÉS de intentarlo)
-- `preguntas/PREGUNTAS.md` → preguntas de práctica originales estilo examen (solo track dbx)
+- `preguntas/PREGUNTAS.md` → preguntas de práctica estilo examen con soluciones comentadas (en **todos** los tracks)
 
 ## Track 1 — Certificación (dbx)
 
