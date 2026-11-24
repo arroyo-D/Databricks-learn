@@ -7,6 +7,8 @@ Programa completo de aprendizaje de Databricks, de cero a certificación y más 
 3. **Libro**: *Designing Data Governance from the Ground Up* (Maffeo) → track `gov-XX`
 4. **Guías BASWE**: *15 AI Engineering Projects* + *The AI Pivot Field Guide 2026* → track `ai-XX`
 5. **Informe oficial**: *Databricks State of AI Agents* + vídeos de proyectos E2E → track `cap-XX` (proyectos integradores)
+6. **Roadmap**: *7 Data Analyst Projects* → track `an-XX` (proyectos de analista, adaptado a España y Databricks)
+7. **Guía**: *Space ML Project Guides* (datasets reales NASA) → track `ml-XX` (ML clásico + deep learning con MLflow)
 
 ## Empieza aquí
 
@@ -109,12 +111,36 @@ Proyectos grandes tipo portfolio real. Cada uno **une varios módulos** de los t
 - [Full End-to-End Data Engineering Project in Databricks](https://www.youtube.com/watch?v=SSz7HiyQN1M) — proyecto E2E medallion (refuerzo de `cap-01`).
 - [Smart City End-to-End Realtime Data Streaming Pipeline](https://www.youtube.com/watch?v=Vv_fvwF41_0) — Kafka + Spark streaming + IoT (base de `cap-06`; índice de capítulos dentro del módulo).
 
+## Track 6 — Proyectos de analista de datos (an)
+
+Adaptación del *7 Data Analyst Projects Roadmap* a Databricks y a fuentes españolas (datos.gob.es en vez de data.gov.in). Los 7 proyectos originales se fusionan en 4 módulos grandes por afinidad. Nivel intermedio: son el puente entre "sé hacer notebooks" y "tengo portfolio de analista".
+
+| # | Módulo | Fusiona | Tecnología clave |
+|---|---|---|---|
+| 01 | [Tracker de precios + datos públicos ES](an-01-datos-publicos-y-precios) | price tracker + análisis fuentes abiertas | Lakeflow Jobs diario, Delta Bronze/Silver, statsmodels, AI/BI |
+| 02 | [Simulación A/B test + cohortes](an-02-simulacion-ab-cohortes) | A/B testing & cohorts | simulador con efecto plantado, z-test, SRM, triángulo de retención SQL |
+| 03 | [Sentimiento reviews + tracker empleo LLM](an-03-texto-sentimiento-y-llm) | sentiment dashboard + job tracker | VADER vs `ai_query`, gold labels, NMF, MERGE incremental |
+| 04 | [Warehouse personal estrella + app](an-04-warehouse-personal-y-app) | personal warehouse + app desplegada | esquema en estrella, Genie, Streamlit en Databricks Apps |
+
+> ⚠️ Empieza `an-01` (Parte A) cuanto antes: el tracker de precios necesita 30 días reales de captura; mientras corre solo, haces el resto.
+
+## Track 7 — Machine Learning con datos NASA (ml)
+
+Adaptación del *Space ML Project Guides*: ML serio con datasets científicos reales y etiquetados. Énfasis en lo que distingue al ML profesional: baselines obligatorios, control de leakage, métricas honestas y todo registrado en MLflow. Orden recomendado: `ml-01` (CPU, laptop/cluster normal) antes que `ml-02` (GPU).
+
+| # | Módulo | Fusiona | Nivel | Hardware |
+|---|---|---|---|---|
+| 01 | [Series NASA: anomalías + exoplanetas](ml-01-series-nasa) | spacecraft anomalies + exoplanet finder | 🔴 | CPU suficiente |
+| 02 | [Segmentación de terreno marciano](ml-02-mars-segmentacion) | AI4MARS segmentation | 🔴 | GPU (cluster GPU o Colab/Kaggle gratis) |
+
 ### Orden sugerido global
 
 1. `dbx-00` → `dbx-14` (base + certificación)
 2. `wr-01` → `wr-08` en paralelo si te falta Python
-3. `ai-01` → elegir 2–3 del track ai
-4. `cap-01` → `cap-05` como proyectos finales de portfolio
+3. `an-01` → `an-04` (portfolio de analista; empieza `an-01` YA por el tracker de 30 días)
+4. `ai-01` → elegir 2–3 del track ai
+5. `ml-01` → `ml-02` (ML serio; en paralelo al track ai si quieres)
+6. `cap-01` → `cap-05` como proyectos finales de portfolio
 
 ## Fuentes de datos
 

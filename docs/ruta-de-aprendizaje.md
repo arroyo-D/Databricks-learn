@@ -76,7 +76,19 @@ gov-01 framework ──► gov-02 roles ──► gov-03 consejo/diccionario
 - **Prerrequisito**: `dbx-01` y `dbx-11` (Unity Catalog). Sin ellos, los ejercicios de gobernanza no tienen dónde aterrizar.
 - Momento ideal: justo después de `dbx-11`/`dbx-12`, cuando la parte técnica de permisos está fresca.
 
-## Fase 4 — AI Engineering (track `ai`, tras dominar la base)
+## Fase 4 — Proyectos de analista (track `an`, tras wr-05/wr-07)
+
+**Prerrequisito**: `dbx-03` (transformaciones) + `wr-04`, `wr-05` y `wr-07`. No depende del track `gov` ni del `ai`.
+
+```
+an-01 precios/datos públicos ──► an-02 A/B + cohortes ──► an-03 texto/LLM ──► an-04 warehouse + app
+```
+
+- ⏰ **Empieza `an-01` (Parte A) lo antes posible**: el tracker de precios necesita 30 días de captura real. Prográmalo el primer día y sigue con otros módulos mientras el job trabaja.
+- `an-03` y `an-04` también tienen jobs periódicos (semanal/diario): cuando llegues a ellos ya tendrás el hábito.
+- Adaptado a España: datos.gob.es como fuente principal de datos públicos.
+
+## Fase 5 — AI Engineering (track `ai`, tras dominar la base)
 
 **Prerrequisito duro**: `dbx-00` a `dbx-10` completos + `ai-01` como puerta de entrada.
 
@@ -89,7 +101,18 @@ Orden recomendado (el README maestro lo detalla):
 
 Cada README del track ai indica sus **prerrequisitos exactos** en la cabecera. No hacen falta los 15: elige 2–3 para construir de verdad (los capstones los integran).
 
-## Fase 5 — Proyectos integradores (track `cap`, el examen final no oficial)
+## Fase 6 — Machine Learning con datos NASA (track `ml`, nivel avanzado)
+
+**Prerrequisito**: `wr-05`, `wr-07` + `dbx-03`. Recomendado: `ai-01` (cultura de evaluación). Puede hacerse en paralelo al track `ai`.
+
+```
+ml-01 series NASA (anomalías + exoplanetas, CPU) ──► ml-02 segmentación Marte (GPU)
+```
+
+- `ml-02` necesita GPU: cluster GPU de Databricks (de pago) o Colab/Kaggle gratis con registro en MLflow de Databricks — el módulo explica ambas rutas.
+- Los dos son piezas de portfolio con datasets reales de la NASA: baselines obligatorios, control de leakage y métricas honestas.
+
+## Fase 7 — Proyectos integradores (track `cap`, el examen final no oficial)
 
 ```
 cap-01 (plataforma E2E)      ← requiere dbx-01…dbx-10
@@ -110,7 +133,9 @@ cap-06 (smart city + Kafka)  ← requiere dbx-05…10; cap-01 recomendado
 - [ ] dbx-00 → dbx-14 con sus preguntas de examen hechas
 - [ ] wr-01 → wr-08 (o solo wr-02 → wr-08 si dominas Python)
 - [ ] gov-01 → gov-06 tras dbx-11/12
+- [ ] an-01 → an-04 (con el tracker de precios corriendo desde el primer día)
 - [ ] 2–3 módulos del track ai construidos de verdad
+- [ ] ml-01 (y ml-02 si tienes GPU o usas Colab/Kaggle)
 - [ ] cap-01 + 1–2 capstones más
 - [ ] Examen de certificación superado (o simulacros >80% en las preguntas de los módulos dbx)
 
