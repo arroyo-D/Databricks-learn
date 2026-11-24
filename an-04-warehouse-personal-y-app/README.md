@@ -62,8 +62,10 @@ Un analista que solo hace notebooks entrega trabajo a medias: el producto final 
 ## ⚠️ Seguridad y privacidad
 
 - **Tus exports personales (Spotify, banco, Google) NUNCA entran en este repo ni en tablas compartidas**: UC Volume personal + `.gitignore`. Un CSV bancario commiteado es un incidente: si pasa, rótalo todo y reescribe el historial.
+- **Ni tampoco entran en Free Edition**: sus términos permiten a Databricks entrenar modelos con tu contenido. La variante con datos personales se hace **entera en tu servidor** (Postgres/DuckDB + Streamlit local, mismo esquema en estrella y misma app): ver [../docs/servidor-local.md](../docs/servidor-local.md) §3. En Free Edition solo la parte pública (clima).
 - El token de Databricks para la app va en Secrets/variables de entorno del despliegue, no en `app.py`.
-- Open-Meteo no pide key: atribución agradecida en el README de la app.
+- Free Edition permite hasta 3 Apps y **se paran a las 24 h**: para una demo permanente usa HF Spaces.
+- Open-Meteo no pide key: atribución agradecida en el README de la app. Si la salida a Internet está bloqueada en tu workspace, descarga el histórico en local y súbelo al Volume ([../docs/recursos-gratuitos.md](../docs/recursos-gratuitos.md) §3); el job diario solo necesita el último día.
 
 ## Entregable
 

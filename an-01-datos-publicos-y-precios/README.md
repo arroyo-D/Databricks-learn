@@ -60,6 +60,10 @@ La diferencia entre "sé pandas" y "soy analista" es demostrar que puedes hacer 
 - Lakeflow Jobs: https://docs.databricks.com/ → *Lakeflow Jobs* ✅
 - Fuentes de datos del repo: [../docs/fuentes-de-datos.md](../docs/fuentes-de-datos.md)
 
+## ⚠️ Free Edition
+
+La salida a Internet desde notebooks está restringida a dominios de confianza: prueba primero un `requests.get("https://books.toscrape.com")` en una celda. Si conecta, haz el scraping directamente; si no, aplica el patrón "descarga local → Volume" de [../docs/recursos-gratuitos.md](../docs/recursos-gratuitos.md) §3 (descargas en tu Mac un snapshot de las páginas y el notebook las procesa desde el Volume; el job diario sigue teniendo sentido sobre capturas que subes tú o que generas sintéticas).
+
 ## ⚠️ Seguridad y legalidad
 
 - Scraping solo donde esté permitido (robots.txt + ToS). Books to Scrape existe precisamente para practicar sin riesgo.

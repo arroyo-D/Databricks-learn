@@ -59,6 +59,11 @@ Estos dos proyectos enseñan lo que los datasets de juguete no pueden: **evaluar
 - Documentación MLflow en Databricks: https://docs.databricks.com/ → *MLflow* ✅
 - Fuentes de datos: [../docs/fuentes-de-datos.md](../docs/fuentes-de-datos.md)
 
+## ⚠️ Free Edition
+
+- **Descarga**: Kaggle y el Exoplanet Archive pueden no ser dominios de confianza para la salida restringida. Descarga en tu Mac/servidor con la Kaggle API (key en `~/.kaggle/kaggle.json` local, jamás en Git) y sube los ficheros a un UC Volume: [../docs/recursos-gratuitos.md](../docs/recursos-gratuitos.md) §3.
+- **Entrenamiento**: el LSTM (Parte A) y el baseline (Parte B) entrenan en CPU. Caben en serverless, pero vigila la cuota diaria; si la agotas, entrena en tu servidor (28 núcleos) apuntando MLflow al workspace: [../docs/servidor-local.md](../docs/servidor-local.md) §5.
+
 ## ⚠️ Seguridad
 
 - La Kaggle API key va en **Databricks Secrets** (`dbutils.secrets.get(scope, "kaggle-key")`), nunca en el notebook ni en `~/.kaggle/kaggle.json` commiteado.

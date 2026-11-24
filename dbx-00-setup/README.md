@@ -18,9 +18,12 @@ Sin workspace no hay proyecto: este módulo deja tu entorno listo y cubre los co
 - Arquitectura de Apache Spark: Driver, Executors, Slots
 
 ### 2. Workspace y Cluster
-- [ ] Crear el recurso Azure Databricks (o acceder a tu workspace)
-- [ ] Crear un **cluster all-purpose**: single node, Databricks Runtime LTS, terminar a los 30 min de inactividad
+- [ ] Acceder a tu workspace de **Databricks Free Edition** (NO crees Azure Databricks de pago: Free Edition ya te da todo lo necesario)
+- [ ] **Adaptación Free Edition**: no hay clusters clásicos — el compute serverless se adjunta solo al ejecutar la primera celda. Localiza dónde se ve el compute conectado en la UI del notebook
+- [ ] Estudia igualmente la teoría de clusters (all-purpose vs job, single node, auto-termination, Databricks Runtime LTS) con el PDF: **cae en el examen** aunque en Free Edition no los crees
 - [ ] Identificar en la UI: Compute, Workspace, Catalog, Workflows, SQL
+
+> 📖 Lee antes de nada [docs/recursos-gratuitos.md](../docs/recursos-gratuitos.md): límites de Free Edition (cuota diaria, salida a Internet restringida) que condicionan todo el programa.
 
 ### 3. Notebooks
 - [ ] Crear notebook `00_hola_databricks` en tu carpeta de usuario

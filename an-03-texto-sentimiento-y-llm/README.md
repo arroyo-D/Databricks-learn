@@ -60,6 +60,10 @@ El 80% de los datos de negocio son texto libre. Saber convertir "me encanta pero
 - Fuentes de datos: [../docs/fuentes-de-datos.md](../docs/fuentes-de-datos.md)
 - Evaluación de LLMs a fondo: [../ai-01-eval-regresiones-llm](../ai-01-eval-regresiones-llm)
 
+## ⚠️ Free Edition
+
+`google-play-scraper` y las APIs de empleo pueden no ser dominios de confianza para la salida restringida de Free Edition. Si la llamada falla desde el notebook: ejecuta la descarga **en tu Mac o servidor** (script `descargar.py` con cron local) y sube el JSON/CSV al Volume; el resto del pipeline (Bronze → Silver → LLM → dashboard) corre igual en Databricks. Ver [../docs/recursos-gratuitos.md](../docs/recursos-gratuitos.md) §3. Si `ai_query` no estuviera disponible en tu cuenta, el fallback de desarrollo es Ollama en tu servidor ([../docs/servidor-local.md](../docs/servidor-local.md) §4).
+
 ## ⚠️ Seguridad
 
 - Ambas APIs son públicas sin key. Si añades otra con key (LinkedIn, Indeed...), va a Databricks Secrets y revisa sus ToS: la mayoría prohíben scraping directo.

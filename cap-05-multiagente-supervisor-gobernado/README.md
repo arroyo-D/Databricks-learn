@@ -6,6 +6,8 @@
 **Nivel:** 🔴🔴 Cumbre · **Duración estimada:** 4 semanas
 **Integra:** `ai-15`, `ai-05`, `ai-11`, y consume datos de `cap-01`/`cap-02` si los hiciste
 
+> ⚠️ **Free Edition**: Agent Bricks (Supervisor Agent) **no está disponible** — aquí el supervisor se construye con LangGraph + MLflow, que es lo que el Brick empaqueta. Los serving endpoints propios están limitados (sin GPU, pocos activos): apoya el tráfico LLM en Foundation Model APIs por pago por token (`ai_query`/cliente OpenAI de Databricks) en vez de desplegar endpoints propios. Ver [../docs/recursos-gratuitos.md](../docs/recursos-gratuitos.md).
+
 ## El escenario
 
 Un "analista virtual" para la dirección de la empresa: recibe peticiones complejas en lenguaje natural ("analiza por qué cayó la venta del restaurante X la semana pasada y prepara un resumen para el comité"), las descompone, ejecuta con especialistas (datos, documentos, redacción), **audita sus propias respuestas** con críticos independientes, y escala al humano antes de cualquier acción sensible. Todo el tráfico LLM pasa por el gateway gobernado.

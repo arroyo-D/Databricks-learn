@@ -14,6 +14,10 @@ Programa completo de aprendizaje de Databricks, de cero a certificación y más 
 
 👉 **[docs/ruta-de-aprendizaje.md](docs/ruta-de-aprendizaje.md)** — la ruta completa con prerrequisitos: qué necesitas antes de empezar (Fase 0), en qué orden hacer cada track y qué lecturas son obligatorias en cada punto. Diseñada para que no te saltes nada.
 
+💶 **[docs/recursos-gratuitos.md](docs/recursos-gratuitos.md)** — **lectura obligatoria**: todo el programa adaptado a Databricks Free Edition + servidor propio, sin pagar nada. Qué límites tiene la cuenta gratuita, qué corre en tu servidor y qué sustituye a los servicios de pago.
+
+🖥️ **[docs/servidor-local.md](docs/servidor-local.md)** — setup de tu servidor (32 GB / 28 núcleos) con Docker: Kafka, Postgres, Ollama y entrenamiento CPU.
+
 🛠️ **[docs/entorno-local.md](docs/entorno-local.md)** — qué instalar (y qué NO) para los módulos que se desarrollan desde tu Mac: dbx-13, dbx-14 y CI/CD.
 
 📓 **[bitacora/PLANTILLA.md](bitacora/PLANTILLA.md)** — copia esta plantilla por cada módulo terminado: qué aprendiste, qué te costó y cómo contarlo en una entrevista.
@@ -152,4 +156,5 @@ Los ejercicios usan datasets públicos verificados: ver [docs/fuentes-de-datos.m
 - Las credenciales van en Databricks Secrets (`dbutils.secrets`), GitHub Secrets o en variables de entorno locales.
 - Todos los tokens/keys que aparecen en los ejemplos son **placeholders** (`dapiXXXX...`, `TU_CLAVE`).
 - Los datasets de los ejercicios AI son **sintéticos o autocurados**: no subas emails, documentos ni logs con datos reales.
+- **Free Edition**: sus términos permiten a Databricks entrenar modelos con tu contenido y es solo para uso personal — datos personales (exports de Spotify/banco) fuera del workspace: van a tu servidor ([docs/recursos-gratuitos.md](docs/recursos-gratuitos.md) §5).
 - Revisa `git diff --cached` antes de cada push y mantén el `.gitignore` actualizado.

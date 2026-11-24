@@ -32,6 +32,8 @@ Objetivo: ingerir todo en tiempo real, construir la visión operativa de la ciud
 | PowerBI | **AI/BI Dashboards** + Genie |
 | IAM policies | Permisos de Unity Catalog |
 
+> ⚠️ **Free Edition**: la salida a Internet de serverless está restringida a dominios de confianza, así que `readStream.format("kafka")` contra la IP de tu servidor probablemente **no conectará**. Dos rutas equivalentes (detalle en [../docs/servidor-local.md](../docs/servidor-local.md) §2): **(a) file-drop** — un consumidor en el servidor vuelca micro-batches JSON a un Volume y Auto Loader los ingiere (mismo aprendizaje de streaming); **(b) 100% local** — PySpark open source en tu servidor leyendo de Kafka y escribiendo Delta local (API idéntica). Kafka se instala con el docker-compose de [../docs/servidor-local.md](../docs/servidor-local.md).
+
 ## Arquitectura objetivo
 
 ```

@@ -6,6 +6,8 @@
 **Nivel:** 🔴 Proyecto cumbre de ingeniería · **Duración estimada:** 3–4 semanas (2–3 h/día)
 **Integra:** `dbx-01`, `dbx-02`, `dbx-03`, `dbx-05`, `dbx-06`, `dbx-07`, `dbx-08`, `dbx-09`, `dbx-10`
 
+> ⚠️ **Free Edition**: (1) En vez de Azure Event Hub/Azure SQL usa el generador propio + Delta/Postgres de tu servidor (ya es la opción por defecto abajo); (2) solo puedes tener **1 pipeline SDP activo** — si vienes de dbx-09, pausa o elimina el anterior; (3) el sentimiento con `ai_query` es serverless-compatible. Tu cuenta Azure no hace falta: ver [../docs/recursos-gratuitos.md](../docs/recursos-gratuitos.md) §4.
+
 ## El escenario
 
 Una cadena de restaurantes quiere una plataforma de analítica operativa en tiempo casi real:

@@ -6,15 +6,19 @@ Esta es la ruta oficial del programa. Está diseñada para que **no te saltes na
 
 | # | Requisito | Cómo conseguirlo | ¿Obligatorio? |
 |---|---|---|---|
-| 0.1 | **Cuenta de Databricks** | Databricks Free Edition (gratis, sin tarjeta) o trial de 14 días en Azure/AWS/GCP. Desde https://docs.databricks.com/ → *Sign up for Databricks for free* | ✅ Sí, todo se hace aquí |
+| 0.1 | **Cuenta de Databricks** | Ya la tienes: **Free Edition** (gratis, sin tarjeta). ⚠️ Lee **[recursos-gratuitos.md](recursos-gratuitos.md)** antes de empezar: cuota diaria, salida a Internet restringida, sin clusters clásicos — condiciona cómo se hacen varios módulos. NO crees un Azure Databricks de pago | ✅ Sí, todo se hace aquí |
 | 0.2 | **GitHub** | Ya lo tienes (`arroyo-D`). Sirve para versionar notebooks con Git folders y para los ejercicios de CI/CD | ✅ Sí |
-| 0.3 | **Curso PDF** (Udatademy Data Engineer Associate) | Comprado. Es la lectura teórica del track `dbx`: cada módulo indica qué capítulos leer ANTES de las tareas | ✅ Sí |
-| 0.4 | **Libro McGregor** (*Practical Python Data Wrangling*) | Lo tienes. Teoría del track `wr` | ✅ Sí (salvo que domines Python) |
-| 0.5 | **Libro Maffeo** (*Designing Data Governance*) | Lo tienes. Teoría del track `gov` | ✅ Sí |
-| 0.6 | **Guías BASWE** (15 AI Projects + AI Pivot Field Guide) | Las tienes. Contexto del track `ai` | ⬜ Solo lectura de apoyo |
-| 0.7 | **Python básico** | Si no dominas Python, el track `wr` te lo da empezando por `wr-01`. Si lo dominas, haz `wr-01` a modo de repaso rápido | ⚠️ Valora tu nivel |
+| 0.3 | **Servidor propio** | Ya lo tienes (32 GB / 28 núcleos). Setup con Docker (Kafka, Postgres, Ollama): **[servidor-local.md](servidor-local.md)**. Lo necesitarás en cap-01/cap-06, ml-01 y la parte privada de an-04 | ⚠️ Sí, pero más adelante |
+| 0.4 | **Curso PDF** (Udatademy Data Engineer Associate) | Comprado. Es la lectura teórica del track `dbx`: cada módulo indica qué capítulos leer ANTES de las tareas | ✅ Sí |
+| 0.5 | **Libro McGregor** (*Practical Python Data Wrangling*) | Lo tienes. Teoría del track `wr` | ✅ Sí (salvo que domines Python) |
+| 0.6 | **Libro Maffeo** (*Designing Data Governance*) | Lo tienes. Teoría del track `gov` | ✅ Sí |
+| 0.7 | **Guías BASWE** (15 AI Projects + AI Pivot Field Guide) | Las tienes. Contexto del track `ai` | ⬜ Solo lectura de apoyo |
+| 0.8 | **Python básico** | Si no dominas Python, el track `wr` te lo da empezando por `wr-01`. Si lo dominas, haz `wr-01` a modo de repaso rápido | ⚠️ Valora tu nivel |
+| 0.9 | **Cuentas Kaggle + Hugging Face** | Gratis. Kaggle: descargas de ml-01 y GPU gratis para ml-02. HF: datasets y despliegue de demos (Spaces) | ⚠️ Créalas ya, las usas en an/ml |
 
 > ⚠️ **Regla de oro de seguridad**: desde el primer día, cualquier credencial (token de Databricks, API keys) va en Databricks Secrets o variables de entorno — nunca en código. Este repo es público.
+>
+> ⚠️ **Regla de oro de recursos**: todo el programa está diseñado para coste cero (Free Edition + tu servidor + Kaggle/HF gratis). Antes de pagar por cualquier cosa, consulta [recursos-gratuitos.md](recursos-gratuitos.md): casi seguro que hay alternativa documentada.
 
 ## ¿Te atascas? Orden de recursos (sin pedir ayuda externa)
 

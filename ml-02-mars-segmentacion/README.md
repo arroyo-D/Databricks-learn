@@ -25,9 +25,12 @@ La segmentación es visión por computador "de verdad": salida densa, clases des
 
 | Opción | GPU | Coste | Notas |
 |---|---|---|---|
-| Cluster Databricks con GPU (p. ej. `g4dn.xlarge` en AWS) | ✅ | 💰 | La opción "nativa": MLflow integrado |
-| Google Colab / Kaggle Notebooks | ✅ (T4 gratis) | Gratis | Alternativa válida: entrena allí, registra el modelo en MLflow de Databricks |
-| Solo CPU | ❌ inviable | — | No intentes DeepLabV3 en CPU |
+| **Kaggle Notebooks / Google Colab** | ✅ (T4 gratis, ~30 h/sem en Kaggle) | Gratis | **Recomendada**: entrena allí, registra el modelo en MLflow de Databricks |
+| AI Runtime de Free Edition (tras verificar identidad con LinkedIn) | ✅ limitada | Gratis | "Sujeta a disponibilidad", sin cuota publicada: úsala si aparece, no planifiques con ella — ver [../docs/recursos-gratuitos.md](../docs/recursos-gratuitos.md) |
+| Cluster Databricks con GPU de pago | ✅ | 💰 | Descartada en este programa |
+| Solo CPU (incluido tu servidor) | ❌ inviable | — | No intentes DeepLabV3 en CPU |
+
+> La descarga del dataset de Hugging Face puede estar bloqueada desde Free Edition (salida restringida): descarga en local/Kaggle y sube al Volume solo si necesitas los datos dentro de Databricks ([../docs/recursos-gratuitos.md](../docs/recursos-gratuitos.md) §3). Si entrenas en Kaggle/Colab, todo el ciclo puede vivir allí y solo el registro del modelo va a Databricks.
 
 ## Tareas
 

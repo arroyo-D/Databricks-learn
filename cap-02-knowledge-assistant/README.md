@@ -10,6 +10,8 @@
 
 Tu empresa (la cadena de restaurantes de `cap-01`, o un dominio nuevo) tiene documentación dispersa: manuales operativos, políticas, recetas, guías de proveedores. Vas a construir un **asistente de conocimiento** que responde con citas verificadas, se evalúa continuamente en CI y cuyo dataset de evaluación crece solo desde el tráfico real.
 
+> ⚠️ **Free Edition**: Agent Bricks (Knowledge Assistant empaquetado) **no está disponible** — este proyecto lo construye a mano con Vector Search + Agent Framework/MLflow, que es exactamente lo que el Brick automatiza. Además, Vector Search está limitado a **1 endpoint / 1 unidad**: reutiliza el mismo endpoint de ai-06/ai-07. Ver [../docs/recursos-gratuitos.md](../docs/recursos-gratuitos.md).
+
 ## Qué hace al producto "de producción" y no un demo
 
 1. **RAG híbrido** (vector + keyword) con reranking y citas verificadas — `ai-06`.

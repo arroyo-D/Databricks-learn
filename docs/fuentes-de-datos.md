@@ -48,3 +48,7 @@ Los módulos `ai-XX` no dependen de datasets externos: sus golden sets, corpus d
 - `ai-10` puede usar texto fuente de cualquier dataset público de esta tabla para construir el dataset de fine-tuning.
 
 Si alguna URL deja de funcionar, abre un issue en este repo.
+
+## Nota Free Edition (salida a Internet restringida)
+
+Los notebooks de Free Edition solo pueden salir a un conjunto limitado de dominios de confianza: si una de estas URLs no responde desde un notebook, descarga el dato desde tu Mac/servidor y súbelo a un UC Volume (patrón completo en [recursos-gratuitos.md](recursos-gratuitos.md) §3). Límites oficiales: https://learn.microsoft.com/en-us/azure/databricks/getting-started/free-edition-limitations ✅
